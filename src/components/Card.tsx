@@ -37,19 +37,21 @@ const Card: React.FC<IProps> = ({ product }) => {
           ${product.price}.00
         </span>
         <Button
-          content="Add To Cart"
           className={`mt-4 ${button({
             color: 'light',
             size: 'full',
           })}`}
-        />
+        >
+          Add to Cart
+        </Button>
         <Button
-          content="Buy Now"
           className={`mt-4 ${button({
             color: 'dark',
             size: 'full',
           })}`}
-        />
+        >
+          Buy Now
+        </Button>
       </div>
     </article>
   );

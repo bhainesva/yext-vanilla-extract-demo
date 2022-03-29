@@ -19,10 +19,12 @@ const SearchForm: React.FC<IProps> = ({
         onChange={onChange}
         name="query"
       />
-      <Button content="Search" className={button({
+      <Button className={button({
         color: 'light',
         size: 'full',
-      })} />
+      })}>
+        Search
+      </Button>
     </form>
   )
 }

@@ -1,12 +1,11 @@
 interface Props {
-  content: string
   className?: any
 }
 
-const Button: React.FC<Props> = ({ className, content }) => {
+const Button: React.FC<Props> = ({ className, children }) => {
   return (
     <button className={className}>
-      {content}
+      {children}
     </button>
   );
 };
