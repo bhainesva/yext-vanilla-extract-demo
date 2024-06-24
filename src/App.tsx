@@ -4,6 +4,7 @@ import { SearchForm, SearchResults } from './components';
 import { Product } from './components/Card';
 import { theme } from './design-system/theme.css';
 import logo from './assets/logo.png';
+import Address from './my-library/Address';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <SearchForm onChange={(e: React.ChangeEvent<HTMLInputElement>) => search(e.target.value)} />
         </div>
       </header>
+      <Address />
       <section className="container mx-auto">
         <SearchResults results={filtered} />
       </section>
